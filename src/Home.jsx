@@ -31,7 +31,7 @@ function Home() {
     setIsLoading(true);
     setReview('');
     try {
-      const { data } = await axios.post('http://localhost:3000/ai/get-review', { code });
+      const { data } = await axios.post('https://eone-ai-bebn-3zyyagqej-dileshwar-lahres-projects.vercel.app/ai/get-review', { code });
       setReview(data);
     } catch {
       setReview('## Error\nAI couldn\'t process this. Try again.');
